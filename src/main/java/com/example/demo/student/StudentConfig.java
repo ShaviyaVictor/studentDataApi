@@ -29,9 +29,16 @@ public class StudentConfig {
                     LocalDate.of(1993, Month.SEPTEMBER, 2)
 
             );
+            Student norris = new Student(
+                    "Norris Ambune",
+                    "male",
+                    "terrifictennis@gmail.com",
+                    254_7990,
+                    LocalDate.of(1989, Month.DECEMBER, 22)
+            );
 
             repository.saveAll(
-                    List.of(shaviya, jos)
+                    List.of(shaviya, jos, norris)
             );
         };
     }

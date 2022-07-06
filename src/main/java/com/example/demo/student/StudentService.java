@@ -66,6 +66,7 @@ public class StudentService {
             Optional<Student> studentOptional = studentRepository.findStudentByEmail(email);
             if (studentOptional.isPresent()) {
                 throw new IllegalStateException("Email taken");
-            } student.setEmail(email);
+            }
+            student.setEmail(email);
         }}
     }
